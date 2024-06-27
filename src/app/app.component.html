@@ -1,0 +1,7 @@
+<div class="zip-code-input">
+  <app-zip-code-input (zipCodeSubmit)="onZipCodeSubmit($event)"></app-zip-code-input>
+</div>
+<div class="map-view">
+  <mat-progress-spinner *ngIf="loading" mode="indeterminate"></mat-progress-spinner>
+  <app-map-view [geoJsonData]="geoJsonData"></app-map-view>
+</div>
